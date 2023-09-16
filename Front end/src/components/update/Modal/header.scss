@@ -7,9 +7,11 @@
   left: 0;
   right: 0;
 
-  &.menu-open {
-    transform: translateY(-100%);
-  }
+  // Going to be used for whenever I implement the additional header features (This translates the header upward out of view
+
+  // &.menu-open {
+  //   transform: translateY(-100%);
+  // }
 
   .container {
     display: flex;
@@ -20,6 +22,7 @@
     padding: 10px 20px;
   }
 
+  // Going to be used for whenever I implement the additional header features
   .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -42,4 +45,20 @@
       margin: 0 auto;
     }
   }
+
+  // Sidebar 
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100%;
+  background-color: #333;
+  color: #fff; 
+  transition: left 0.3s ease-in-out; 
+
+  &.menu-open {
+    left: 0;
+  }
+}
 }
