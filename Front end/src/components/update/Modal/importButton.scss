@@ -1,0 +1,22 @@
+
+
+.import-button-container {
+    position: absolute;
+    top: 1;
+    left: 80px; 
+    padding: 10px; 
+}
+
+.import-button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: darkgray;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.scss';
 import DaiqUIriLogo from '/src/assets/DaiqUIris-Logo.png'
+import ImportButton from './importButton';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ const Header = () => {
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
+        <ImportButton />
         <div className="logo">
           <img src={DaiqUIriLogo} alt="Logo" />
         </div>
