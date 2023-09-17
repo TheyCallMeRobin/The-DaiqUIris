@@ -1,37 +1,54 @@
 import React, { useState } from 'react';
 import './Header.scss';
-import DaiqUIriLogo from '/src/assets/DaiqUIris-Logo.png'
-import ImportButton from './importButton';
+import DaiqUIriLogo from '/src/assets/DaiqUIris-Logo.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const [fileFinderVisible, setFileFinderVisible] = useState(false);
+
+  const toggleFileFinder = () => {
+    setFileFinderVisible(!fileFinderVisible);
+  };
+
   return (
     <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
       <div className="container">
-         <div className="hamburger-menu" onClick={toggleMenu}> {/*<- This will be used after the onClick funtion to hide the header modal*/}
-          <div className="bar"></div>                           {/*from view in order to show a side bar Modal*/}
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-        <ImportButton />
-        <div className="logo">
-          <img src={DaiqUIriLogo} alt="Logo" />
-        </div>
+        {menuOpen && (
+          <div className="menu-open">
+            <button className="close-button" onClick={toggleMenu}>
+              x
+            </button>
+          </div>
+        )}
+        {!menuOpen && (
+          <>
+            <div className="hamburger-menu" onClick={toggleMenu}>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>
+
+            {/* Import Button */}
+            <div className="import-button-container">
+              <button className="import-button" onClick={toggleFileFinder}>
+                Import
+              </button>
+              {fileFinderVisible && (
+                <div className="fileFinder">
+                  <td>whatever file finder should open up</td>
+                </div>
+              )}
+            </div>
+            <div className="logo">
+              <img src={DaiqUIriLogo} alt="Logo" />
+            </div>
+          </>
+        )}
       </div>
-      {menuOpen && (
-        <div className="side-menu">
-          <div className="menu-item">
-            <span>1</span>
-          </div>
-          <div className="menu-item">
-            <span>2</span>
-          </div>
-        </div>
-      )}
     </header>
   );
 };
