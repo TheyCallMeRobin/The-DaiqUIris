@@ -27,7 +27,7 @@
   cursor: pointer;
 
   .import-button {
-    background-color: grey;
+    background-color: green;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -56,14 +56,17 @@ img {
 
 .logo{
   margin-top: -139px; 
+  border-radius: 10%;
 }
 
 .menu-open {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 10000;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 13%;
   height: 100%;
+  min-width: 120px;
 }
 
 .close-button {
@@ -73,7 +76,7 @@ img {
   right: 0;
   margin-top: -5%;
   font-size: 16pt;
-  background-color: red;
+  background-color: #ff605c;
   border-radius: 0px;
   color: black;
   padding: 4.5px;

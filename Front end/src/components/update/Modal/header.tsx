@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.scss';
 import DaiqUIriLogo from '/src/assets/DaiqUIris-Logo.png';
+import FileFinder from './fileFinder'; // Assuming FileFinder is the component for the file finder modal
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,11 +38,7 @@ const Header = () => {
               <button className="import-button" onClick={toggleFileFinder}>
                 Import
               </button>
-              {fileFinderVisible && (
-                <div className="fileFinder">
-                  <td>whatever file finder should open up</td>
-                </div>
-              )}
+              {/* {fileFinderVisible && <FileFinder />} Render the FileFinder component when fileFinderVisible is true */}
             </div>
             <div className="logo">
               <img src={DaiqUIriLogo} alt="Logo" />
