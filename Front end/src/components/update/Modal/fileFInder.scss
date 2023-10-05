@@ -1,0 +1,138 @@
+.modal-outline {
+    position: fixed;
+    top: 127px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: auto;
+  }
+  
+  
+  .modal-content {
+    background-color: white;
+    width: 80%;
+    max-width: 1000px;
+    height: 50%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative; 
+  }
+  .title{
+    position: fixed;
+  }
+  
+  .top-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  // .modal-close {
+  //   z-index: 100000;
+  //   position: relative;
+  //   top: 0;
+  //   right: 0;
+  //   margin-top: -3.9%;
+  //   font-size: 16pt;
+  //   background-color: #ff605c;
+  //   border-radius: 0px;
+  //   color: black;
+  //   padding: 4.5px;
+  //   cursor: pointer;
+  // }
+  
+  .line{
+    height: 2px;
+    margin-top: 20%;
+    width: 100%;
+    background-color: black;
+    margin: 6px 0;
+  }
+  
+  .import-buttons {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    margin-right: 0;
+    margin-bottom: 0;
+    display: flex;
+    border-radius: 7%;
+    box-shadow: 1px 1px 5px rgba(255, 255, 0, 0.589);
+    border-color: black;
+    background-color: green;
+    color: white;
+    border-width: 1px;
+    flex-direction: row-reverse; 
+  }
+  
+  .file-shower {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    top: 50px;
+    width: 30%;
+    max-height: 2px;
+    max-width: 188px;
+    min-width: 185px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    font-size: 7pt;
+    box-shadow: 1px 1px 5px;
+  }
+  
+  .file-finder-button {
+    position:absolute;
+    width: 20px;
+    margin-top: 28px;
+    // margin-left: 28%;
+    display: outside;
+    left: 235px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .text{
+    margin: -6px;
+  }
+  
+  .preprossesing-options-text{
+    position: relative;
+    top: 70px;
+    left: 0;
+    font-weight: 00;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .preprossesing-options{
+    position:relative;
+    margin-top: 90px;
+    transform: scale(0.9);
+  }
+  
+  .filter-button{
+    border-radius: 7%;
+    box-shadow: 1px 1px 5px rgba(255, 255, 0, 0.589);
+    border-color: black;
+    background-color: green;
+    color:white;
+  }
+  
+  
+  @media (max-width: 550px) {
+    .modal-content {
+      display: none;
+    }
+    .modal-outline {
+      display: none;
+    }
+  }
+  

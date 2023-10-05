@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.scss'
 import Header from './components/update/Modal/header';
-import windowFrame from './components/update/Modal/windowFrame';
 
 function App() {
   return (
