@@ -1,0 +1,58 @@
+.app-layout-sider, 
+.app-layout-sider-menu {
+    background: #008000 !important;
+} 
+.app-layout-header,
+.app-layout-header-button {
+    background: transparent;
+}
+
+.app-layout-sider, 
+.app-layout-content,
+.app-layout-footer {
+    text-align: center;
+}
+
+.app-layout {
+    min-height: 100vh;
+}
+
+.app-layout-header {
+    padding: 0;
+    background: transparent;
+    
+}
+
+.app-layout-header-button {
+    font-size: 16px;
+    width: 64;
+    height: 64;
+}
+
+.app-layout-header-logo {
+    width: 150px;
+    height: auto;    
+}
+
+.app-layout-content {
+    background: transparent;
+}
+
+.iframe-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+}
+.ant-tabs-tab-btn {
+    color: black;
+}
+.ant-tabs-tab ant-tabs-tab-active {
+    color: turquoise !important;
+}
+/* .components-channelsdropdown {
+    width: 85%;
+} */
+
+
